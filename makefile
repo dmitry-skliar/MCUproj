@@ -33,13 +33,7 @@ __file_lst  := $(__objects:%=%.lst) $(__file_elf:%=%.lst)
 
 ##################################################################################################
 
-.PHONY: help build rebuild clean
-
-print:
-	@echo $(__objects)
-	@echo $(__file_elf)
-	@echo $(__file_bin)
-	@echo $(__file_lst)
+.PHONY: help build rebuild dumps clean
 
 help:
 	@echo ""
