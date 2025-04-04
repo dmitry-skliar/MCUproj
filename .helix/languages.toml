@@ -1,0 +1,9 @@
+[[language]]
+name = "cpp"
+injection-regex = "cpp"
+file-types = ["c", "cpp", "h", "hpp"]
+indent = { tab-width = 4, unit = "    " }
+
+[language-server.clangd]
+command = "clangd"
+args = ["--compile-commands-dir=.helix/","--header-insertion=never"]
